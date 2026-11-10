@@ -1368,495 +1368,210 @@ export default function Home() {
           {/* VIEW: JOIN */}
           {page === 'join' && (
             <div
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                background: 'var(--color-bg-card)',
-                borderRadius: '20px',
-                overflow: 'hidden',
-                boxShadow: '0 20px 50px -24px rgba(16,34,46,.25)',
-              }}
+              className="flex flex-col lg:flex-row bg-[var(--color-bg-card)] rounded-2xl lg:rounded-[20px] overflow-hidden border border-[var(--color-border)] shadow-[0_20px_50px_-24px_rgba(16,34,46,.25)]"
             >
+              {/* Left Dark Hero Banner */}
               <div
+                className="w-full lg:w-[42%] lg:max-w-[420px] p-6 sm:p-8 lg:p-10 flex flex-col gap-6 sm:gap-7 shrink-0 text-white"
                 style={{
-                  flex: '1 1 320px',
-                  minWidth: 0,
-                  padding: '40px',
-                  boxSizing: 'border-box',
-                  color: '#fff',
                   background:
                     'radial-gradient(circle at 80% 8%, rgba(23,201,154,.35), transparent 40%), radial-gradient(circle at 10% 100%, rgba(63,143,232,.3), transparent 45%), var(--color-dark-bg)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '28px',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  <span
-                    style={{
-                      width: '38px',
-                      height: '38px',
-                      borderRadius: '10px',
-                      background: 'var(--color-bg-card)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '2px',
-                      }}
-                    >
-                      <span style={{ display: 'flex', gap: '2px' }}>
-                        <span
-                          style={{
-                            width: '5px',
-                            height: '5px',
-                            borderRadius: '50%',
-                            background: 'var(--color-indigo)',
-                          }}
-                        ></span>
-                        <span
-                          style={{
-                            width: '10px',
-                            height: '5px',
-                            borderRadius: '3px',
-                            background:
-                              'linear-gradient(90deg, var(--color-blue), var(--color-primary))',
-                          }}
-                        ></span>
+                <div className="flex items-center gap-2.5">
+                  <span className="w-[38px] h-[38px] rounded-[10px] bg-white flex items-center justify-center shrink-0 shadow-sm">
+                    <span className="flex flex-col gap-0.5">
+                      <span className="flex gap-0.5">
+                        <span className="w-[5px] h-[5px] rounded-full bg-[var(--color-indigo)]"></span>
+                        <span className="w-[10px] h-[5px] rounded-[3px] bg-gradient-to-r from-[var(--color-blue)] to-[var(--color-primary)]"></span>
                       </span>
-                      <span style={{ display: 'flex', gap: '2px' }}>
-                        <span
-                          style={{
-                            width: '10px',
-                            height: '5px',
-                            borderRadius: '3px',
-                            background: 'var(--color-blue)',
-                          }}
-                        ></span>
-                        <span
-                          style={{
-                            width: '5px',
-                            height: '5px',
-                            borderRadius: '50%',
-                            background: 'var(--color-primary)',
-                          }}
-                        ></span>
+                      <span className="flex gap-0.5">
+                        <span className="w-[10px] h-[5px] rounded-[3px] bg-[var(--color-blue)]"></span>
+                        <span className="w-[5px] h-[5px] rounded-full bg-[var(--color-primary)]"></span>
                       </span>
-                      <span style={{ display: 'flex', gap: '2px' }}>
-                        <span
-                          style={{
-                            width: '5px',
-                            height: '5px',
-                            borderRadius: '50%',
-                            background: 'var(--color-indigo)',
-                          }}
-                        ></span>
-                        <span
-                          style={{
-                            width: '10px',
-                            height: '5px',
-                            borderRadius: '3px',
-                            background:
-                              'linear-gradient(90deg, var(--color-blue), var(--color-primary))',
-                          }}
-                        ></span>
+                      <span className="flex gap-0.5">
+                        <span className="w-[5px] h-[5px] rounded-full bg-[var(--color-indigo)]"></span>
+                        <span className="w-[10px] h-[5px] rounded-[3px] bg-gradient-to-r from-[var(--color-blue)] to-[var(--color-primary)]"></span>
                       </span>
                     </span>
                   </span>
-                  <span style={{ fontWeight: 600, fontSize: '17px' }}>
-                    eSIMLive{' '}
-                    <span style={{ color: 'var(--color-primary-accent)' }}>
-                      Partners
-                    </span>
+                  <span className="font-semibold text-[17px] text-white">
+                    eSIMLive <span className="text-[var(--color-primary-accent)]">Partners</span>
                   </span>
                 </div>
 
-                <div
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '16px',
-                    marginTop: '24px',
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: '12px',
-                      fontWeight: 600,
-                      letterSpacing: '.14em',
-                      color: 'var(--color-primary-accent)',
-                    }}
-                  >
+                <div className="flex flex-col gap-3 sm:gap-4 mt-1 sm:mt-3">
+                  <span className="text-[11px] sm:text-xs font-semibold tracking-[0.14em] text-[var(--color-primary-accent)]">
                     FOR LOCAL BUSINESSES
                   </span>
-                  <h1
-                    style={{
-                      margin: 0,
-                      fontSize: '38px',
-                      lineHeight: 1.1,
-                      fontWeight: 700,
-                      letterSpacing: '-0.02em',
-                      textWrap: 'balance',
-                    }}
-                  >
+                  <h1 className="m-0 text-2xl sm:text-3xl lg:text-[34px] xl:text-[38px] font-bold leading-[1.15] tracking-tight text-white">
                     Put your business on every visitor&apos;s phone.
                   </h1>
-                  <p
-                    style={{
-                      margin: 0,
-                      fontSize: '15px',
-                      lineHeight: 1.6,
-                      color: 'var(--color-dark-text-muted)',
-                      textWrap: 'pretty',
-                    }}
-                  >
-                    List once. Your restaurant, event or tour shows up in the
-                    eSIMLive app for travellers who are nearby, right when they are
-                    deciding.
+                  <p className="m-0 text-sm sm:text-[15px] leading-relaxed text-[var(--color-dark-text-muted)]">
+                    List once. Your restaurant, event or tour shows up in the eSIMLive app for travellers who are nearby, right when they are deciding.
                   </p>
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <span
-                      style={{
-                        width: '36px',
-                        height: '36px',
-                        borderRadius: '10px',
-                        background: 'var(--color-primary-subtle)',
-                        color: 'var(--color-primary-accent)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <i
-                        className="ph ph-identification-card"
-                        style={{ fontSize: '18px' }}
-                      ></i>
+                <div className="flex flex-col gap-3.5 sm:gap-4">
+                  <div className="flex items-center gap-3">
+                    <span className="w-9 h-9 rounded-[10px] bg-[var(--color-primary-subtle)] text-[var(--color-primary-accent)] flex items-center justify-center shrink-0">
+                      <i className="ph ph-identification-card text-lg"></i>
                     </span>
-                    <span style={{ fontSize: '14px' }}>
-                      <b>Sign up</b> with your company details
+                    <span className="text-xs sm:text-sm text-white/90">
+                      <strong className="text-white font-semibold">Sign up</strong> with your company details
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <span
-                      style={{
-                        width: '36px',
-                        height: '36px',
-                        borderRadius: '10px',
-                        background: 'var(--color-primary-subtle)',
-                        color: 'var(--color-primary-accent)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <i className="ph ph-map-pin" style={{ fontSize: '18px' }}></i>
+                  <div className="flex items-center gap-3">
+                    <span className="w-9 h-9 rounded-[10px] bg-[var(--color-primary-subtle)] text-[var(--color-primary-accent)] flex items-center justify-center shrink-0">
+                      <i className="ph ph-map-pin text-lg"></i>
                     </span>
-                    <span style={{ fontSize: '14px' }}>
-                      <b>Pin your location</b> in one click
+                    <span className="text-xs sm:text-sm text-white/90">
+                      <strong className="text-white font-semibold">Pin your location</strong> in one click
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <span
-                      style={{
-                        width: '36px',
-                        height: '36px',
-                        borderRadius: '10px',
-                        background: 'var(--color-primary-subtle)',
-                        color: 'var(--color-primary-accent)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <i className="ph ph-sparkle" style={{ fontSize: '18px' }}></i>
+                  <div className="flex items-center gap-3">
+                    <span className="w-9 h-9 rounded-[10px] bg-[var(--color-primary-subtle)] text-[var(--color-primary-accent)] flex items-center justify-center shrink-0">
+                      <i className="ph ph-sparkle text-lg"></i>
                     </span>
-                    <span style={{ fontSize: '14px' }}>
-                      <b>Let AI write</b> your listing in every language
+                    <span className="text-xs sm:text-sm text-white/90">
+                      <strong className="text-white font-semibold">Let AI write</strong> your listing in every language
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <span
-                      style={{
-                        width: '36px',
-                        height: '36px',
-                        borderRadius: '10px',
-                        background: 'var(--color-primary-subtle)',
-                        color: 'var(--color-primary-accent)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <i
-                        className="ph ph-device-mobile"
-                        style={{ fontSize: '18px' }}
-                      ></i>
+                  <div className="flex items-center gap-3">
+                    <span className="w-9 h-9 rounded-[10px] bg-[var(--color-primary-subtle)] text-[var(--color-primary-accent)] flex items-center justify-center shrink-0">
+                      <i className="ph ph-device-mobile text-lg"></i>
                     </span>
-                    <span style={{ fontSize: '14px' }}>
-                      <b>Go live</b> in the eSIMLive app
+                    <span className="text-xs sm:text-sm text-white/90">
+                      <strong className="text-white font-semibold">Go live</strong> in the eSIMLive app
                     </span>
                   </div>
                 </div>
               </div>
 
-              <div
-                style={{
-                  flex: '1.3 1 380px',
-                  minWidth: 0,
-                  padding: '40px',
-                  boxSizing: 'border-box',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '20px',
-                }}
-              >
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'flex-end',
-                    alignItems: 'center',
-                    gap: '10px',
-                  }}
-                >
-                  <span
-                    style={{
-                      color: 'var(--color-text-muted)',
-                      fontSize: '13px',
-                    }}
-                  >
+              {/* Right Form Container */}
+              <div className="flex-1 min-w-0 p-6 sm:p-8 lg:p-10 flex flex-col gap-5 sm:gap-6 bg-[var(--color-bg-card)]">
+                <div className="flex items-center justify-between gap-3 pb-3 sm:pb-0 border-b border-[var(--color-border)] sm:border-b-0">
+                  <span className="text-xs sm:text-[13px] text-[var(--color-text-muted)] font-medium">
                     Already a partner?
                   </span>
                   <button
+                    type="button"
                     onClick={() => {
                       setState((s) => ({ ...s, signedUp: true, joinError: '' }));
                       go('listings');
                     }}
-                    style={{
-                      height: '36px',
-                      padding: '0 16px',
-                      borderRadius: '999px',
-                      border: '1px solid var(--color-border-input)',
-                      background: 'var(--color-bg-card)',
-                      font: 'inherit',
-                      fontWeight: 600,
-                      fontSize: '13px',
-                      cursor: 'pointer',
-                      color: 'var(--color-text-main)',
-                      whiteSpace: 'nowrap',
-                    }}
+                    className="h-9 px-4 rounded-full border border-[var(--color-border-input)] bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-page)] text-[var(--color-text-main)] text-xs sm:text-[13px] font-semibold whitespace-nowrap cursor-pointer transition-colors"
                   >
                     Sign in
                   </button>
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  <h2
-                    style={{
-                      margin: 0,
-                      fontSize: '26px',
-                      fontWeight: 700,
-                      letterSpacing: '-0.02em',
-                    }}
-                  >
+                <div className="flex flex-col gap-1 sm:gap-1.5">
+                  <h2 className="m-0 text-xl sm:text-2xl lg:text-[26px] font-bold tracking-tight text-[var(--color-text-main)]">
                     Create your partner account
                   </h2>
-                  <span style={{ color: 'var(--color-text-muted)' }}>
+                  <span className="text-xs sm:text-sm text-[var(--color-text-muted)]">
                     Free to join. Takes about two minutes.
                   </span>
                 </div>
 
-                <label style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  <span style={{ fontSize: '13px', fontWeight: 600 }}>
+                <label className="flex flex-col gap-2">
+                  <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">
                     Business name
                   </span>
                   <input
                     value={st.join.business}
                     onChange={(ev) => upd('join', { business: ev.target.value })}
-                    style={{
-                      height: '44px',
-                      boxSizing: 'border-box',
-                      padding: '0 14px',
-                      border: '1px solid var(--color-border-input)',
-                      borderRadius: '10px',
-                      font: 'inherit',
-                      fontSize: '14px',
-                      color: 'var(--color-text-main)',
-                      background: 'var(--color-bg-card)',
-                      outline: 'none',
-                    }}
+                    placeholder="e.g. Dar Zellij, Sahara Dunes Tours"
+                    className="h-11 sm:h-12 box-border px-3.5 rounded-xl border border-[var(--color-border-input)] text-sm text-[var(--color-text-main)] bg-[var(--color-bg-card)] outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-glow)] transition-all"
                   />
                 </label>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  <span style={{ fontSize: '13px', fontWeight: 600 }}>Category</span>
-                  <div
-                    style={{
-                      display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fill, minmax(118px, 1fr))',
-                      gap: '10px',
-                    }}
-                  >
-                    {catTiles.map((c) => (
-                      <button
-                        key={c.id}
-                        onClick={c.onClick}
-                        style={c.style}
-                      >
-                        <i className={`ph ${c.icon}`} style={{ fontSize: '22px' }}></i>
-                        <span>{c.label}</span>
-                      </button>
-                    ))}
+                <div className="flex flex-col gap-2">
+                  <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">Category</span>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5">
+                    {catTiles.map((c) => {
+                      const on = c.id === cat.id;
+                      return (
+                        <button
+                          key={c.id}
+                          type="button"
+                          onClick={c.onClick}
+                          className={`flex flex-col items-center justify-center gap-2 py-3 px-2 rounded-xl border text-center transition-all cursor-pointer font-inherit ${
+                            on
+                              ? 'border-[var(--color-primary)] bg-[var(--color-primary-tint)] text-[var(--color-primary-dark)] shadow-sm font-semibold'
+                              : 'border-[var(--color-border-input)] bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-page)] text-[var(--color-text-main)] font-medium'
+                          }`}
+                        >
+                          <i className={`ph ${c.icon} text-xl sm:text-2xl`}></i>
+                          <span className="text-xs sm:text-[13px] leading-tight">{c.label}</span>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
 
-                <div
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                    gap: '16px',
-                  }}
-                >
-                  <label
-                    style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-                  >
-                    <span style={{ fontSize: '13px', fontWeight: 600 }}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
+                  <label className="flex flex-col gap-2">
+                    <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">
                       Contact name
                     </span>
                     <input
                       value={st.join.contact}
                       onChange={(ev) => upd('join', { contact: ev.target.value })}
-                      style={{
-                        height: '44px',
-                        boxSizing: 'border-box',
-                        padding: '0 14px',
-                        border: '1px solid var(--color-border-input)',
-                        borderRadius: '10px',
-                        font: 'inherit',
-                        fontSize: '14px',
-                        color: 'var(--color-text-main)',
-                        background: 'var(--color-bg-card)',
-                        outline: 'none',
-                      }}
+                      placeholder="e.g. Youssef Amrani"
+                      className="h-11 sm:h-12 box-border px-3.5 rounded-xl border border-[var(--color-border-input)] text-sm text-[var(--color-text-main)] bg-[var(--color-bg-card)] outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-glow)] transition-all"
                     />
                   </label>
-                  <label
-                    style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-                  >
-                    <span style={{ fontSize: '13px', fontWeight: 600 }}>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">
                       Business licence no.
                     </span>
                     <input
                       value={st.join.licence}
                       onChange={(ev) => upd('join', { licence: ev.target.value })}
-                      style={{
-                        height: '44px',
-                        boxSizing: 'border-box',
-                        padding: '0 14px',
-                        border: '1px solid var(--color-border-input)',
-                        borderRadius: '10px',
-                        font: 'inherit',
-                        fontSize: '14px',
-                        color: 'var(--color-text-main)',
-                        background: 'var(--color-bg-card)',
-                        outline: 'none',
-                      }}
+                      placeholder="e.g. RC 123456"
+                      className="h-11 sm:h-12 box-border px-3.5 rounded-xl border border-[var(--color-border-input)] text-sm text-[var(--color-text-main)] bg-[var(--color-bg-card)] outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-glow)] transition-all"
                     />
                   </label>
-                  <label
-                    style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-                  >
-                    <span style={{ fontSize: '13px', fontWeight: 600 }}>Email</span>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">Email</span>
                     <input
                       type="email"
                       value={st.join.email}
                       onChange={(ev) => upd('join', { email: ev.target.value })}
-                      style={{
-                        height: '44px',
-                        boxSizing: 'border-box',
-                        padding: '0 14px',
-                        border: '1px solid var(--color-border-input)',
-                        borderRadius: '10px',
-                        font: 'inherit',
-                        fontSize: '14px',
-                        color: 'var(--color-text-main)',
-                        background: 'var(--color-bg-card)',
-                        outline: 'none',
-                      }}
+                      placeholder="hello@business.com"
+                      className="h-11 sm:h-12 box-border px-3.5 rounded-xl border border-[var(--color-border-input)] text-sm text-[var(--color-text-main)] bg-[var(--color-bg-card)] outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-glow)] transition-all"
                     />
                   </label>
-                  <label
-                    style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-                  >
-                    <span style={{ fontSize: '13px', fontWeight: 600 }}>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">
                       Phone / WhatsApp
                     </span>
                     <input
                       value={st.join.phone}
                       onChange={(ev) => upd('join', { phone: ev.target.value })}
-                      style={{
-                        height: '44px',
-                        boxSizing: 'border-box',
-                        padding: '0 14px',
-                        border: '1px solid var(--color-border-input)',
-                        borderRadius: '10px',
-                        font: 'inherit',
-                        fontSize: '14px',
-                        color: 'var(--color-text-main)',
-                        background: 'var(--color-bg-card)',
-                        outline: 'none',
-                      }}
+                      placeholder="+212 6 12 34 56 78"
+                      className="h-11 sm:h-12 box-border px-3.5 rounded-xl border border-[var(--color-border-input)] text-sm text-[var(--color-text-main)] bg-[var(--color-bg-card)] outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-glow)] transition-all"
                     />
                   </label>
-                  <label
-                    style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-                  >
-                    <span style={{ fontSize: '13px', fontWeight: 600 }}>City</span>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">City</span>
                     <input
                       value={st.join.city}
                       onChange={(ev) => upd('join', { city: ev.target.value })}
-                      style={{
-                        height: '44px',
-                        boxSizing: 'border-box',
-                        padding: '0 14px',
-                        border: '1px solid var(--color-border-input)',
-                        borderRadius: '10px',
-                        font: 'inherit',
-                        fontSize: '14px',
-                        color: 'var(--color-text-main)',
-                        background: 'var(--color-bg-card)',
-                        outline: 'none',
-                      }}
+                      placeholder="e.g. Marrakech"
+                      className="h-11 sm:h-12 box-border px-3.5 rounded-xl border border-[var(--color-border-input)] text-sm text-[var(--color-text-main)] bg-[var(--color-bg-card)] outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-glow)] transition-all"
                     />
                   </label>
-                  <label
-                    style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-                  >
-                    <span style={{ fontSize: '13px', fontWeight: 600 }}>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-xs sm:text-[13px] font-semibold text-[var(--color-text-main)]">
                       Country
                     </span>
                     <select
                       value={st.join.country}
                       onChange={(ev) => upd('join', { country: ev.target.value })}
-                      style={{
-                        height: '44px',
-                        boxSizing: 'border-box',
-                        padding: '0 12px',
-                        border: '1px solid var(--color-border-input)',
-                        borderRadius: '10px',
-                        font: 'inherit',
-                        fontSize: '14px',
-                        color: 'var(--color-text-main)',
-                        background: 'var(--color-bg-card)',
-                        outline: 'none',
-                      }}
+                      className="h-11 sm:h-12 box-border px-3 rounded-xl border border-[var(--color-border-input)] text-sm text-[var(--color-text-main)] bg-[var(--color-bg-card)] outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-glow)] transition-all"
                     >
                       {COUNTRIES.map((ct) => (
                         <option key={ct} value={ct}>
@@ -1867,42 +1582,28 @@ export default function Home() {
                   </label>
                 </div>
 
-                <label
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '10px',
-                    cursor: 'pointer',
-                    color: 'var(--color-text-sub)',
-                  }}
-                >
+                <label className="flex items-start sm:items-center gap-2.5 cursor-pointer text-[var(--color-text-sub)] select-none pt-1">
                   <input
                     type="checkbox"
                     checked={st.join.agree}
                     onChange={(ev) => upd('join', { agree: ev.target.checked })}
-                    style={{
-                      width: '18px',
-                      height: '18px',
-                      accentColor: 'var(--color-primary)',
-                      margin: 0,
-                    }}
+                    className="w-4 h-4 sm:w-4.5 sm:h-4.5 mt-0.5 sm:mt-0 rounded accent-[var(--color-primary)] cursor-pointer"
                   />
-                  <span>I agree to the eSIMLive partner terms</span>
+                  <span className="text-xs sm:text-sm leading-snug">
+                    I agree to the eSIMLive partner terms
+                  </span>
                 </label>
 
                 {st.joinError && (
-                  <span
-                    style={{
-                      color: 'var(--color-alert-red)',
-                      fontSize: '13px',
-                    }}
-                  >
-                    {st.joinError}
-                  </span>
+                  <div className="flex items-center gap-2 p-3 rounded-xl bg-[var(--color-alert-bg)] border border-[var(--color-alert-border)] text-[var(--color-alert-red)] text-xs sm:text-[13px]">
+                    <i className="ph ph-warning-circle text-base shrink-0"></i>
+                    <span>{st.joinError}</span>
+                  </div>
                 )}
 
-                <div>
+                <div className="pt-2">
                   <button
+                    type="button"
                     onClick={() => {
                       const j = st.join;
                       if (!j.business.trim() || !/\S+@\S+\.\S+/.test(j.email)) {
@@ -1932,25 +1633,10 @@ export default function Home() {
                       go(target);
                       toast('Welcome to eSIMLive Partners');
                     }}
-                    style={{
-                      height: '50px',
-                      padding: '0 28px',
-                      border: 0,
-                      borderRadius: '999px',
-                      background: 'var(--color-primary)',
-                      color: 'var(--color-primary-darker)',
-                      font: 'inherit',
-                      fontWeight: 600,
-                      fontSize: '15px',
-                      cursor: 'pointer',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '10px',
-                      boxShadow: '0 10px 24px -10px var(--color-primary-shadow)',
-                    }}
+                    className="w-full sm:w-auto h-12 sm:h-[50px] px-8 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] active:bg-[var(--color-primary-active)] text-[var(--color-primary-darker)] font-semibold text-sm sm:text-[15px] cursor-pointer inline-flex items-center justify-center gap-2.5 shadow-[0_10px_24px_-10px_var(--color-primary-shadow)] active:scale-[0.99] transition-all"
                   >
-                    Create partner account{' '}
-                    <i className="ph ph-arrow-right" style={{ fontSize: '16px' }}></i>
+                    <span>Create partner account</span>
+                    <i className="ph ph-arrow-right text-base"></i>
                   </button>
                 </div>
               </div>
@@ -4828,25 +4514,27 @@ export default function Home() {
 
         {/* 3. Right Sticky Smartphone Preview (310x640px matching eSIMLive Partners.dc.html) */}
         <aside
-          className="w-full max-w-[320px] mx-auto flex flex-col items-center gap-3.5 lg:sticky lg:top-24 shrink-0"
+          className="w-full max-w-[320px] mx-auto flex flex-col items-center gap-3.5 lg:sticky lg:top-24 shrink-0 mt-4 lg:mt-0"
           style={{
-            flex: '0 0 320px',
+            flex: '0 0 auto',
+            maxWidth: '100%',
           }}
         >
           <span
             style={{
-              alignSelf: 'flex-start',
               fontSize: '12px',
               fontWeight: 600,
               letterSpacing: '.12em',
               color: 'var(--color-text-muted)',
             }}
+            className="self-center lg:self-start text-center lg:text-left"
           >
             {labels[page]}
           </span>
           <div
             style={{
-              width: '310px',
+              width: '100%',
+              maxWidth: '310px',
               height: '640px',
               boxSizing: 'border-box',
               padding: '10px',
